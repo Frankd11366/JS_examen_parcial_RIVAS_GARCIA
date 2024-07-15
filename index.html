@@ -12,26 +12,39 @@
         crossorigin="anonymous"></script>
 </head>
 <style>
+    body {
+        text-align: center;
+        margin-top: 50px;
+    }
 
-
+    form{
+        border: solid black;
+        text-align: center;
+    }
 </style>
 
 <body>
-    <h1>Seleccione los Productos</h1>
-    <form class="m-5 p-5">
-        <div class="mb-3">
-            <label for="producto_1" class="form-label">Productos</label>
-            <input type="producto_1" class="form-control" id="producto_1">
+    <h1>Cargue los Productos</h1>
+    <form class="row m-5">
+        <div class="col-5">
+            <div class="m-3">
+                <label for="prodcuto" class="form-label">PRODUCTO</label>
+                <input type="text" class="form-control" id="producto">
+            </div>
         </div>
-        <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        <div class="col-5">
+            <div class="m-3">
+                <label for="precio" class="form-label">PRECIO</label>
+                <input type="text" class="form-control" id="precio">
+            </div>
         </div>
-        <button type="submit" class="btn btn-success">Submit</button>
+        <div class="col-2 mt-5">
+            <button type="submit" class="btn btn-success">AGREGAR</button>
+        </div>
     </form>
 
 
-
 </body>
+<script src="./script.js"></script>
 
 </html>
